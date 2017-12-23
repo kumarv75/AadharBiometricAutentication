@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#127998"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:id="@+id/text_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="Aadhaar Authentication"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:text="Enter your 12 digit Aadhar Number : "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_cardno"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="12"
+                android:inputType="number"
+                android:background="@drawable/rounded_border_edittext"
+                android:ems="15"
+                android:hint="Please Enter 12 digit Aadhaar Number..... "
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:text="ency text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageViewFingerPrint"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_marginBottom="5sp"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewFingerPrint2"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/download"
+                />
+
+            <Button
+                android:id="@+id/buttonInit"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Authenticate" />
+
+
+
+            <!--<Button-->
+            <!--android:id="@+id/buttonUnInit"-->
+            <!--android:layout_width="200sp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Capture 2"-->
+            <!--android:onClick="capture2" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/buttonVerify"-->
+            <!--android:layout_width="200sp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Verify"-->
+            <!--android:onClick="verify" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
